@@ -1,0 +1,137 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+}
+
+#main-view {
+    height: 100%;
+    display: flex;
+}
+
+aside {
+    font-family: 'Gill Sans';
+    background-color: #1f1f3d;
+}
+
+main {
+    flex: 1;
+}
+
+.aside-menu__title {
+    font-family: 'Gill Sans';
+    font-size: 2rem;
+    color: #eaeaf4;
+}
+
+.aside-menu--padding-regular {
+    padding: 10px 20px;
+}
+
+.aside-menu--border-bottom-regular {
+    border-bottom: 1px solid #eaeaf4;
+}
+
+.aside-menu__button {
+    font-family: 'Gill Sans';
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+    background-color: #A9AAD2;
+    border: 1px solid #A9AAD2;
+    margin-bottom: 10px;
+    transition: all .5s;
+}
+
+.aside-menu__button:hover {
+    background-color: #1f1f3d;
+    color: #A9AAD2;
+    border: 1px solid #A9AAD2;
+    cursor: pointer;
+}
+
+.aside-menu-2__title {
+    margin: 10px 0px 20px;
+    font-weight: 500;
+    color: #A9AAD2;
+    font-size: 1rem;
+}
+
+.form-section {
+    background-color: #A9AAD2;
+}
+
+label {
+    font-family: 'Gill Sans';
+    color: #1f1f3d;
+    font-weight: 400;
+    margin: 10px 0px;
+}
+
+.search-icon {
+    height: 25px;
+    width: 25px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    max-width: 350px;
+    margin: 0px auto;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #A9AAD2;
+}
+
+#input-body {
+    height: 100px;
+}
+
+.search-input-wrapper {
+    display: flex;
+    margin: 10px 0px;
+}
+
+.input-container>* {
+    width: 100%;
+}
+
+#search-box {
+    flex: 1;
+    font-family: 'Gill Sans"';
+}
+
+.search-icon {
+    background-color: #1f1f3d;
+    padding: 10px;
+}
+
+#form-section__button {
+    background-color: #1f1f3d;
+    color: #eaeaf4;
+    padding: 10px;
+    font-size: 1rem;
+    font-family: 'Gill Sans';
+    margin: 10px 0px;
+}
+
+#input-title {
+    height: 45px;
+}
