@@ -11,8 +11,8 @@ function addIdea() {
     var title = titleInputEl.value
     var body = bodyInputEl.value
 
-    if (checkValuesPresent(title,body))return alert("Not a valid idea.");
-      if (checkDuplicate(title, body)) {
+    if (checkValuesPresent(title, body)) return alert("Not a valid idea.");
+    if (checkDuplicate(title, body)) {
         return alert("This idea already exists, try another.")
     }
 
@@ -24,7 +24,7 @@ function addIdea() {
     // create idea and put onto the dom by creating a new element
 }
 
-document.addEventListener('click', function(e) {
+document.addEventListener('click', function (e) {
     if (e.target && e.target.id == 'delete-btn') {
         removeIdea(Number(e.target.dataset.id))
     }
@@ -48,7 +48,16 @@ function removeIdea(id) {
 
 function addIdeaElement(idea) {
     const div = window.document.createElement('div')
-    div.innerHTML = `<h1>${idea.title}</h1> <p>${idea.body}</p> <button data-id=${idea.id} id="delete-btn" >delete</button>`
+    div.innerHTML = `
+    <div class="top-section">
+    <button data-id=${idea.id} id="favorite-btn" > <img height=15 width=15 src='assets/star.svg'/></button><button data-id=${idea.id} id="delete-btn" > <img height=15 width=15 src='assets/delete.svg'/></button>
+    </div>
+    <div class="middle-section">
+     <h1>${idea.title}</h1> <p>${idea.body}</p> 
+    </div>
+    <div class="bottom-section"></div>
+    
+    `
     window.document.querySelector('#idea-section').prepend(div)
 }
 
@@ -61,5 +70,8 @@ function checkValuesPresent(title, body) {
 }
 
 function checkDuplicate(newTitle, newBody) {
-    return !!list.find(({ title, body }) => title === newTitle && body === newBody)
+    return !!list.find(({
+        title,
+        body
+    }) => title === newTitle && body === newBody)
 }
