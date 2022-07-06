@@ -13,7 +13,7 @@ body {
 }
 
 #main-view {
-    height: 100%;
+    min-height: 100vh;
     display: flex;
 }
 
@@ -134,4 +134,38 @@ label {
 
 #input-title {
     height: 45px;
+}
+
+#idea-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+#idea-section>div {
+    border: solid black 2px;
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    /* position: relative; */
+}
+
+#delete-btn {
+    /* position: absolute; */
+    /* top: 5px; */
+    /* right: 5px; */
+    background-color: #1f1f3d;
+}
+
+#favorite-btn {
+    background-color: #1f1f3d;
+}
+
+#star {
+    background-color: red;
+
+}
+
+.top-section {
+    background-color: #1f1f3d;
 }
