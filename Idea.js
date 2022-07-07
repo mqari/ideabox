@@ -55,8 +55,7 @@ function addIdeaElement(idea) {
     <div class="middle-section">
      <h1>${idea.title}</h1> <p>${idea.body}</p> 
     </div>
-    <div class="bottom-section"></div>
-    
+    <div class="bottom-section"><button id="add-btn"> <img id="plus-sign" src='assets/comment.svg'/></button>Comment</div>
     `
     window.document.querySelector('#idea-section').prepend(div)
 }
