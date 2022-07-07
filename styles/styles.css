@@ -144,7 +144,6 @@ label {
 
 #idea-section>div {
     border: solid black 2px;
-    height: 150px;
     width: 150px;
     margin: 10px;
     /* position: relative; */
@@ -167,5 +166,20 @@ label {
 }
 
 .top-section {
+    background-color: #1f1f3d;
+}
+
+#plus-sign {
+    height: 25px;
+    width: 25px;
+    background-color: #1f1f3d;
+}
+
+.bottom-section {
+    background-color: #1f1f3d;
+    color: white;
+}
+
+#add-btn {
     background-color: #1f1f3d;
 }
